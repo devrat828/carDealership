@@ -19,6 +19,18 @@ public class User {
     private String userAddress;
     private userType userType;
 
+    public User(int userId, String userName, String userPhone, String userAddress, userType userType) {
+        this.userId = userId;
+        this.userName = userName;
+        this.userPhone = userPhone;
+        this.userAddress = userAddress;
+        this.userType = userType;
+    }
+
+    public User() {
+
+    }
+
     public int getUserId() {
         return userId;
     }
