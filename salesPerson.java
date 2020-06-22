@@ -9,36 +9,10 @@ Rev: 1
 */
 package edu.psu.abington.ist.ist242;
 
-public class salesPerson {
+public final class SalesPerson extends User{
 
-    private String eName;
-    private int eID;
-    private int ePhone;
-
-    public salesPerson(){
-        //Comming soon
-    }
-    public salesPerson(String eName, int eID, int ePhone) {
-        this.eName = eName;
-        this.eID = eID;
-        this.ePhone = ePhone;
+    public SalesPerson(int userId, String userName, String userPhone, String userAddress, userType userType) {
+        super(userId, userName, userPhone, userAddress, userType);
     }
 
-    public String geteName() {
-        return eName;
-    }
-
-    public int geteID() {
-        return eID;
-    }
-
-    public int getePhone() {
-        return ePhone;
-    }
-
-    public static void salesPersonsRecord(){
-        System.out.println("Coming Soon");
-    }
 }
-
-
